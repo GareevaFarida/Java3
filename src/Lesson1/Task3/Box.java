@@ -6,10 +6,8 @@ import java.util.Arrays;
 public class Box <T extends Fruit> {
     private ArrayList<T> fruits;
 
-    public <T> Box(T... mas_fruit) {
-
-        ArrayList<T> fruits1 = new ArrayList<>(Arrays.asList(mas_fruit));
-        fruits = fruits1;//new ArrayList<>(Arrays.asList(mas_fruit));
+    public Box(T... mas_fruit) {
+        fruits = new ArrayList<>(Arrays.asList(mas_fruit));
     }
 
 
@@ -35,3 +33,5 @@ public class Box <T extends Fruit> {
     }
 
 }
+
+
